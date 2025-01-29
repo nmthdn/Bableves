@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - Webfejlesztés Alapok</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">
+                <a href="index.html" class="hover:text-gray-200">Webfejlesztés Alapok</a>
+            </h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Responsive Design: Alkalmazkodó weboldalak</h2>
+            
+            <img src="https://picsum.photos/1200/600" alt="Responsive Design illusztráció" class="w-full rounded-lg mb-6">
+            
+            <div class="prose max-w-none">
+                <h3 class="text-2xl font-bold mt-8 mb-4">Mi az a reszponzív design?</h3>
+                <p class="mb-4">A reszponzív design azt jelenti, hogy weboldalunk automatikusan alkalmazkodik a különböző képernyőméretekhez (mobil, tablet, desktop). Ez ma már alapvető elvárás minden weboldallal szemben.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Viewport meta tag</h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Media Query-k használata</h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>/* Mobilon */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Tableten */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Asztali gépen */
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        padding: 30px;
+    }
+}</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Rugalmas mértékegységek</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">em</code> - A szülő elem betűméretéhez viszonyított méret</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">rem</code> - A root (html) elem betűméretéhez viszonyított méret</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">%</code> - A szülő elem méretéhez viszonyított százalékos méret</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">vw/vh</code> - A viewport szélességéhez/magasságához viszonyított méret</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Reszponzív képek</h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Különböző képek különböző méretekhez */
+&lt;picture&gt;
+    &lt;source media="(min-width: 1024px)" srcset="nagy.jpg"&gt;
+    &lt;source media="(min-width: 768px)" srcset="kozepes.jpg"&gt;
+    &lt;img src="kicsi.jpg" alt="Reszponzív kép"&gt;
+&lt;/picture&gt;</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Gyakorlati feladat</h3>
+                <p class="mb-4">Készíts egy egyszerű reszponzív oldalt, amely tartalmaz egy fejlécet, egy főtartalmi részt két hasábbal és egy láblécet. A két hasáb mobil nézetben egymás alatt, nagyobb képernyőn egymás mellett jelenjen meg!</p>
+
+                <div class="bg-purple-100 p-4 rounded-lg mt-8">
+                    <h4 class="font-bold text-purple-800 mb-2">Gratulálunk!</h4>
+                    <p class="text-purple-800">Ezzel végeztünk is az alapokkal! Most már képes vagy egyszerű, reszponzív weboldalakat készíteni. Gyakorolj sokat, és folytasd a tanulást!</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Webfejlesztés Alapok. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+</body>
+</html>

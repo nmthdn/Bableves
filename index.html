@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webfejlesztés Alapok</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .blog-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center">Webfejlesztés Alapok</h1>
+            <p class="text-center mt-2">Kezdő lépések a weboldalak világában</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Hétfő -->
+            <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://picsum.photos/800/400?random=1" alt="HTML alapok" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Hétfő: HTML Alapok</h3>
+                    <p class="text-gray-600">Ismerkedés a HTML alapjaival: tagek, elemek és attribútumok. Mi is az a HTML és miért fontos?</p>
+                    <a href="hetfo.html" class="inline-block mt-4 bg-purple-600 text-white px-4 py-2 rounded">Tovább</a>
+                </div>
+            </div>
+
+            <!-- Kedd -->
+            <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://picsum.photos/800/400?random=2" alt="CSS bevezetés" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Kedd: CSS Bevezetés</h3>
+                    <p class="text-gray-600">A stílusok világa: hogyan tehetjük színesebbé és strukturáltabbá weboldalunkat?</p>
+                    <a href="kedd.html" class="inline-block mt-4 bg-purple-600 text-white px-4 py-2 rounded">Tovább</a>
+                </div>
+            </div>
+
+            <!-- Szerda -->
+            <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://picsum.photos/800/400?random=3" alt="Box model" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Szerda: Box Model</h3>
+                    <p class="text-gray-600">Megértjük az elemek méretezését: margin, padding és border tulajdonságok.</p>
+                    <a href="szerda.html" class="inline-block mt-4 bg-purple-600 text-white px-4 py-2 rounded">Tovább</a>
+                </div>
+            </div>
+
+            <!-- Csütörtök -->
+            <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://picsum.photos/800/400?random=4" alt="Pozicionálás" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Csütörtök: Pozicionálás</h3>
+                    <p class="text-gray-600">Elemek elhelyezése a weboldalon: relative, absolute és fixed pozicionálás.</p>
+                    <a href="csutortok.html" class="inline-block mt-4 bg-purple-600 text-white px-4 py-2 rounded">Tovább</a>
+                </div>
+            </div>
+
+            <!-- Péntek -->
+            <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://picsum.photos/800/400?random=5" alt="Responsive design" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Péntek: Responsive Design</h3>
+                    <p class="text-gray-600">Hogyan készítsünk mobilbarát weboldalakat? Bevezetés a reszponzív designba.</p>
+                    <a href="pentek.html" class="inline-block mt-4 bg-purple-600 text-white px-4 py-2 rounded">Tovább</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Webfejlesztés Alapok. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+</body>
+</html>

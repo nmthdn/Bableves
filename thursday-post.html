@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozicionálás - Webfejlesztés Alapok</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">
+                <a href="index.html" class="hover:text-gray-200">Webfejlesztés Alapok</a>
+            </h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Pozicionálás: Elemek elhelyezése a weboldalon</h2>
+            
+            <img src="https://picsum.photos/1200/600" alt="Pozicionálás illusztráció" class="w-full rounded-lg mb-6">
+            
+            <div class="prose max-w-none">
+                <h3 class="text-2xl font-bold mt-8 mb-4">Position tulajdonság</h3>
+                <p class="mb-4">A CSS position tulajdonság segítségével határozhatjuk meg, hogyan helyezkedjen el egy elem a weboldalon. Öt különböző értéket vehet fel: static, relative, absolute, fixed és sticky.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Pozicionálási módok</h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>/* Alapértelmezett pozicionálás */
+.static {
+    position: static;
+}
+
+/* Relatív pozicionálás */
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/* Abszolút pozicionálás */
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Fix pozicionálás */
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Sticky pozicionálás */
+.sticky {
+    position: sticky;
+    top: 0;
+}</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Mikor melyiket használjuk?</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li class="mb-2"><strong>Static:</strong> Alapértelmezett, a normál dokumentumfolyamban marad</li>
+                    <li class="mb-2"><strong>Relative:</strong> Az eredeti helyéhez képest mozdíthatjuk el</li>
+                    <li class="mb-2"><strong>Absolute:</strong> A legközelebbi pozicionált szülőhöz képest helyezkedik el</li>
+                    <li class="mb-2"><strong>Fixed:</strong> A viewport-hoz képest fix pozícióban marad</li>
+                    <li class="mb-2"><strong>Sticky:</strong> Görgetésnél "ragadós" viselkedést mutat</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Z-index használata</h3>
+                <p class="mb-4">A z-index tulajdonság segítségével szabályozhatjuk az elemek egymáshoz viszonyított rétegrendjét:</p>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>.felso-reteg {
+    position: relative;
+    z-index: 2;
+}
+
+.also-reteg {
+    position: relative;
+    z-index: 1;
+}</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Gyakorlati feladat</h3>
+                <p class="mb-4">Készíts egy oldalt, ahol van egy fix fejléc, amely mindig látható marad görgetéskor, és egy "vissza a tetejére" gomb, ami fixed pozícióban van a jobb alsó sarokban!</p>
+
+                <div class="bg-purple-100 p-4 rounded-lg mt-8">
+                    <h4 class="font-bold text-purple-800 mb-2">Holnapi témánk</h4>
+                    <p class="text-purple-800">Holnap a reszponzív design alapjaival ismerkedünk meg, hogy weboldalunk minden eszközön tökéletesen jelenjen meg!</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Webfejlesztés Alapok. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Alapok - Webfejlesztés Alapok</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">
+                <a href="index.html" class="hover:text-gray-200">Webfejlesztés Alapok</a>
+            </h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">HTML Alapok: Első lépések a webfejlesztésben</h2>
+            
+            <img src="https://picsum.photos/1200/600" alt="HTML kód illusztráció" class="w-full rounded-lg mb-6">
+            
+            <div class="prose max-w-none">
+                <h3 class="text-2xl font-bold mt-8 mb-4">Mi az a HTML?</h3>
+                <p class="mb-4">A HTML (HyperText Markup Language) a weboldalak építőköve. Ez egy jelölőnyelv, amely meghatározza a weboldal struktúráját és tartalmát. Gondolj rá úgy, mint egy ház vázára - ez adja meg az alapvető szerkezetet.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Alapvető HTML elemek</h3>
+                <p class="mb-4">Nézzük meg a legalapvetőbb HTML elemeket:</p>
+                
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Az oldal címe&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Ez egy főcím&lt;/h1&gt;
+    &lt;p&gt;Ez egy bekezdés.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">A legfontosabb HTML tagek</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">&lt;h1&gt; - &lt;h6&gt;</code> - Címsorok</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">&lt;p&gt;</code> - Bekezdés</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">&lt;a&gt;</code> - Hivatkozás</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">&lt;img&gt;</code> - Kép</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Gyakorlati feladat</h3>
+                <p class="mb-4">Készíts egy egyszerű HTML oldalt, amely tartalmazza a nevedet címsorként, és írj magadról egy rövid bemutatkozást bekezdésként!</p>
+
+                <div class="bg-purple-100 p-4 rounded-lg mt-8">
+                    <h4 class="font-bold text-purple-800 mb-2">Holnapi témánk</h4>
+                    <p class="text-purple-800">Holnap megismerkedünk a CSS alapjaival, és megtanuljuk, hogyan tehetjük színesebbé és stílusosabbá weboldalunkat!</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Webfejlesztés Alapok. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+</body>
+</html>

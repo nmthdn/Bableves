@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Bevezetés - Webfejlesztés Alapok</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">
+                <a href="index.html" class="hover:text-gray-200">Webfejlesztés Alapok</a>
+            </h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">CSS Bevezetés: Stílusok világa</h2>
+            
+            <img src="https://picsum.photos/1200/600" alt="CSS stílusok illusztráció" class="w-full rounded-lg mb-6">
+            
+            <div class="prose max-w-none">
+                <h3 class="text-2xl font-bold mt-8 mb-4">Mi az a CSS?</h3>
+                <p class="mb-4">A CSS (Cascading Style Sheets) egy stílusleíró nyelv, amely a HTML elemek megjelenését határozza meg. Ha a HTML a ház váza, akkor a CSS a festés, a bútorok és a dekoráció.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">CSS használata</h3>
+                <p class="mb-4">A CSS-t háromféleképpen használhatjuk:</p>
+                
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>/* 1. Inline stílus */
+&lt;p style="color: red;"&gt;Piros szöveg&lt;/p&gt;
+
+/* 2. Internal CSS a head részben */
+&lt;style&gt;
+    p {
+        color: red;
+    }
+&lt;/style&gt;
+
+/* 3. External CSS külön fájlban */
+/* styles.css */
+p {
+    color: red;
+}</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Alapvető CSS tulajdonságok</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">color</code> - Szöveg színe</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">background-color</code> - Háttérszín</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">font-size</code> - Betűméret</li>
+                    <li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded">font-family</code> - Betűtípus</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">CSS szelektorok</h3>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <pre class="text-sm"><code>/* Elem szelektor */
+p {
+    color: blue;
+}
+
+/* ID szelektor */
+#egyedi {
+    font-size: 20px;
+}
+
+/* Class szelektor */
+.kiemelt {
+    background-color: yellow;
+}</code></pre>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Gyakorlati feladat</h3>
+                <p class="mb-4">Készíts egy HTML oldalt, amelyen van egy címsor és három bekezdés. A címsort tedd pirossá, az első bekezdést kékké, a másodikat zölddé, és a harmadikat sárgává!</p>
+
+                <div class="bg-purple-100 p-4 rounded-lg mt-8">
+                    <h4 class="font-bold text-purple-800 mb-2">Holnapi témánk</h4>
+                    <p class="text-purple-800">Holnap megismerkedünk a Box Modellel, és megtanuljuk, hogyan működik az elemek méretezése a weboldalakon!</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Webfejlesztés Alapok. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+</body>
+</html>
